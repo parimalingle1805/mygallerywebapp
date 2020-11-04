@@ -1,0 +1,87 @@
+body{
+    background-color: wheat;
+    animation-name: bdy;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes bdy{
+    0%{
+        background-color: wheat;
+    }
+    50%{
+        background-color: black;
+    }
+    100%{
+        background-color: wheat;
+    }
+    
+}
+
+
+#parent-div{
+    height: 600px;
+    width: 800px;
+    margin-left: 275px;
+    margin-top: 40px;
+    background-color: #0F0D0D;
+    display: grid;
+    grid-template-rows: 10% 20% 70%;
+    padding: 0px 20px 0px 20px;
+    animation-name: parentDiv;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes parentDiv{
+    0%{
+        background-color: #0F0D0D;
+    }
+    50%{
+        background-color: white;
+    }
+    100%{
+        background-color: #0F0D0D;
+    }
+    
+}
+
+
+#middle-row{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+#top-row{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    animation-name: topRow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes topRow{
+    0%{
+        color: white;
+    }
+    50%{
+        color: black;
+    }
+    100%{
+        color: white;
+    }
+}
+
+
+
+img{
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.zoom{
+    margin-left: 75px;
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.75);
+}

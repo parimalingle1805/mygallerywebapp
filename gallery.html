@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Gallery app</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="gallery.js"></script>
+</head>
+
+<body>
+    <div id="parent-div">
+        <div id="top-row">
+            click on photo to view and hover to enlarge
+        </div>
+
+        <div id="middle-row">
+            <div id="col-1" onclick='imgSwitch("images/img1.jpg");'>
+                <img id="img1" src="images/img1.jpg">
+            </div>
+
+            <div id="col-2" onclick='imgSwitch("images/img2.jpg");'>
+                <img id="img2" src="images/img2.jpg">
+            </div>
+
+            <div id="col-3" onclick='imgSwitch("images/img3.jpg");'>
+                <img id="img3" src="images/img3.jpg">
+            </div>
+
+            <div id="col-4" onclick='imgSwitch("images/img4.jpg");'>
+                <img id="img4" src="images/img4.jpg">
+            </div>
+
+            <div id="col-5" onclick='imgSwitch("images/img5.jpg");'>
+                <img id="img5" src="images/img5.jpg">
+            </div>
+        </div>
+
+        <div id="image-view" class="zoom">
+            
+        </div>
+
+    </div>
+
+</body>
